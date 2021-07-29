@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Super- Блокнот</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>804</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="new_2"/>
+    <addaction name="open"/>
+    <addaction name="save"/>
+    <addaction name="separator"/>
+    <addaction name="print"/>
+    <addaction name="print_page"/>
+    <addaction name="PDF"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="copy"/>
+    <addaction name="cut"/>
+    <addaction name="paste"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="undo"/>
+    <addaction name="redo"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Формат</string>
+    </property>
+    <addaction name="font"/>
+    <addaction name="color"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Стили</string>
+    </property>
+    <addaction name="bold"/>
+    <addaction name="italic"/>
+    <addaction name="underline"/>
+    <addaction name="separator"/>
+    <addaction name="left"/>
+    <addaction name="center"/>
+    <addaction name="right"/>
+    <addaction name="justify"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Дата и время</string>
+    </property>
+    <addaction name="time"/>
+    <addaction name="date"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>Выделитель</string>
+    </property>
+    <addaction name="marker"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="new_2"/>
+   <addaction name="open"/>
+   <addaction name="save"/>
+   <addaction name="print"/>
+   <addaction name="print_page"/>
+   <addaction name="PDF"/>
+   <addaction name="separator"/>
+   <addaction name="copy"/>
+   <addaction name="cut"/>
+   <addaction name="paste"/>
+   <addaction name="undo"/>
+   <addaction name="redo"/>
+   <addaction name="separator"/>
+   <addaction name="font"/>
+   <addaction name="color"/>
+   <addaction name="separator"/>
+   <addaction name="bold"/>
+   <addaction name="italic"/>
+   <addaction name="underline"/>
+   <addaction name="separator"/>
+   <addaction name="left"/>
+   <addaction name="center"/>
+   <addaction name="right"/>
+   <addaction name="justify"/>
+   <addaction name="separator"/>
+   <addaction name="time"/>
+   <addaction name="date"/>
+   <addaction name="marker"/>
+   <addaction name="separator"/>
+   <addaction name="about"/>
+  </widget>
+  <action name="new_2">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/new.png</normaloff>:/icons/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="open">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/save.png</normaloff>:/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="print">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/print.png</normaloff>:/icons/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Печать</string>
+   </property>
+  </action>
+  <action name="print_page">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/print_page.png</normaloff>:/icons/print_page.png</iconset>
+   </property>
+   <property name="text">
+    <string>Параметры печати</string>
+   </property>
+  </action>
+  <action name="PDF">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/pdf.png</normaloff>:/icons/pdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Экспорт в PDF</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/exit.png</normaloff>:/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="copy">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/copy.png</normaloff>:/icons/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="cut">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/cut.png</normaloff>:/icons/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Вырезать</string>
+   </property>
+  </action>
+  <action name="paste">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/paste.png</normaloff>:/icons/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="undo">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/undo.png</normaloff>:/icons/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Отменить ввод</string>
+   </property>
+  </action>
+  <action name="redo">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/redo.png</normaloff>:/icons/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Повторить ввод</string>
+   </property>
+  </action>
+  <action name="font">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/font.png</normaloff>:/icons/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Шрифт</string>
+   </property>
+  </action>
+  <action name="color">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/color.png</normaloff>:/icons/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Цвет</string>
+   </property>
+  </action>
+  <action name="bold">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/bold.png</normaloff>:/icons/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Жирный</string>
+   </property>
+  </action>
+  <action name="italic">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/italic.png</normaloff>:/icons/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Курсив</string>
+   </property>
+  </action>
+  <action name="underline">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/underline.png</normaloff>:/icons/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Подчеркивание</string>
+   </property>
+  </action>
+  <action name="left">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/left.png</normaloff>:/icons/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>По левому краю</string>
+   </property>
+  </action>
+  <action name="center">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/center.png</normaloff>:/icons/center.png</iconset>
+   </property>
+   <property name="text">
+    <string>По центру</string>
+   </property>
+  </action>
+  <action name="right">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/right.png</normaloff>:/icons/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>По правому краю</string>
+   </property>
+  </action>
+  <action name="justify">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/justify.png</normaloff>:/icons/justify.png</iconset>
+   </property>
+   <property name="text">
+    <string>По ширине</string>
+   </property>
+  </action>
+  <action name="time">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/time.png</normaloff>:/icons/time.png</iconset>
+   </property>
+   <property name="text">
+    <string>Время</string>
+   </property>
+  </action>
+  <action name="date">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/date.png</normaloff>:/icons/date.png</iconset>
+   </property>
+   <property name="text">
+    <string>Дата</string>
+   </property>
+  </action>
+  <action name="marker">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/marker.png</normaloff>:/icons/marker.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выделитель текста</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/about.png</normaloff>:/icons/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons/icons.qrc"/>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
